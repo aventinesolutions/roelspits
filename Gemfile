@@ -47,3 +47,6 @@ end
 group :test, :development do
   gem 'rspec-rails'
 end
+
+#HAML is just awesome
+gem 'haml'

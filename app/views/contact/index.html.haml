@@ -1,0 +1,29 @@
+.all_contant
+  .all_contant_left
+    .all_contant_left_in
+      %h2 Get In Touch
+      %p Mauris vel lacus vitae felis vestibulum volutpat. Etiam est nunc, venenatis in, tristique eu, imperdiet ac, nisl. Cum sociis natoque penatibus et magnis.
+      %h2 Contact Us Form
+      .clr
+      %form{action: "contact_form.php", enctype: "multipart/form-data", method: "post", name: "contactform", onsubmit: "return validate();"}
+        %input.contac_img{name: "name", onblur: "if(this.value=='')this.value='Naam...'", onfocus: "if(this.value=='Naam...')this.value=''", type: "text", value: "Naam..."}
+        %input.contac_img{name: "E-mail...", onblur: "if(this.value=='')this.value='E-mail...'", onfocus: "if(this.value=='E-mail...')this.value=''", type: "text", value: "E-mail..."}
+        %textarea.contac_img_textarea{name: "number", onblur: "if(this.value=='')this.value='Bericht...'", onfocus: "if(this.value=='Bericht...')this.value=''", type: "text", value: "Bericht..."} Bericht...
+        %input.submit1{name: "submit", type: "submit", value: ""}
+      .clr
+      .div1
+        %h2 (123) 456-7890
+        %img{height: "40", src: "/assets/fun_img.jpg", width: "36"}
+      .div2
+        %h2 www.resultaatqercht.com
+        %img{height: "42", src: "/assets/email_msg.jpg", width: "51"}
+      .div3
+        %h2
+          330 Wray Avenue ,
+          %br
+          Victoria, BC V9E 2H5
+        %img{height: "39", src: "/assets/book.jpg", width: "32"}
+    .clr
+  = render "shared/contact_form"
+  .clr
+.clr

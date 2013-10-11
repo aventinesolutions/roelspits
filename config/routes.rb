@@ -53,4 +53,13 @@ Roelspits::Application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+  resources :biografie
+  resources :contact
+  resources :kosten
+  resources :partners
+  resources :referenties
+  resources :thuis
+  resources :werkwijze
+
+  root :to => "thuis#index" 
 end

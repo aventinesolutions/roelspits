@@ -1,0 +1,27 @@
+!!!
+%html
+	%head
+		%title Roelspits
+		= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true
+		= javascript_include_tag "application", "data-turbolinks-track" => true
+		= csrf_meta_tags
+	%body
+		.page_wrap
+			= render "shared/header"
+			.wrapper
+				.logo
+					%a{href: "#{root_path}"}
+						%img{alt: "Logo", height: "114", src: "/assets/logo_06.png", width: "151"}
+				.clr
+				=yield
+				.social_icon
+					%a{href: "#."}
+						%img{alt: "facebook", height: "25", src: "/assets/face_bok_icon.png", width: "25"}
+					%h3
+						%a{href: "#."} Like us op Facebook
+					%a{href: "#."}
+						%img{alt: "twitter", height: "25", src: "/assets/twiter_icon.png", width: "25"}
+					%h3
+						%a{href: "#."} Follow us op Twitter
+				%img{height: "47", src: "/assets/social_icon_bg.png", width: "40"}
+		=render "shared/footer"

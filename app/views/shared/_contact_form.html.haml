@@ -1,0 +1,17 @@
+.all_contant_right
+  .all_contant_right_in
+    %h2 boeken van een proefles
+    %form{action: "contact_form.php", enctype: "multipart/form-data", method: "post", name: "contactform", onsubmit: "return validate();"}
+      %input.email{name: "name", onblur: "if(this.value=='')this.value='Naam...'", onfocus: "if(this.value=='Naam...')this.value=''", type: "text", value: "Naam..."}
+      %input.email1{name: "E-mail...", onblur: "if(this.value=='')this.value='E-mail...'", onfocus: "if(this.value=='E-mail...')this.value=''", type: "text", value: "E-mail..."}
+      %input.email{name: "number", onblur: "if(this.value=='')this.value='Telefoon...'", onfocus: "if(this.value=='Telefoon...')this.value=''", type: "text", value: "Telefoon..."}
+      %input.submit{name: "submit", type: "submit", value: ""}
+    .clr
+    %h3 wekelijks de gezondheid tips
+    %ul
+      %li
+        %span Sed sed leo erat. Suspendisse sagittis metus aliquet non lacinia...
+      %li
+        %span lorem id metus aliquet non laciniaAenean risus ipsum....
+      %li
+        %span Aenean risus ipsum, convallis nec consectetur eu, bibendum...
