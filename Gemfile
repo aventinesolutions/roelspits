@@ -54,3 +54,5 @@ gem 'haml'
 
 # Heroku Platform optimizers
 gem 'rails_12factor'
+
+gem 'capistrano'
