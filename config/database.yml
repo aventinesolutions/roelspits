@@ -3,7 +3,8 @@ development:
   database: roelspits_dev
   pool: 5
   timeout: 5000
-test:
+
+staging:
   adapter: postgresql
   database: roelspits_test
   pool: 5
