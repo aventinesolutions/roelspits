@@ -56,3 +56,4 @@ gem 'haml'
 gem 'rails_12factor'
 
 gem 'capistrano'
+gem 'passenger'
