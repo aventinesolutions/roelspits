@@ -55,5 +55,6 @@ gem 'haml'
 # Heroku Platform optimizers
 gem 'rails_12factor'
 
-gem 'capistrano'
+gem 'capistrano', '~> 3.0'
+gem 'capistrano-rvm'
 gem 'passenger'
