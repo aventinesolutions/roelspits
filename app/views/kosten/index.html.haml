@@ -1,11 +1,22 @@
 .all_contant
   .all_contant_left
     .all_contant_left_in
-      %h2 Kosten
-      %p Mauris vel lacus vitae felis vestibulum volutpat. Etiam est nunc, venenatis in, tristique eu, imperdiet ac, nisl. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In iaculis facilisis massa. Etiam eu urna. Sed porta. Suspendisse quam leo, molestie sed, luctus quis, feugiat in, pede. Fusce tellus. Sed metus augue, convallis et, vehicula ut Suspendisse quam leo, molestie sed, luctus quis, feugiat in, pede.
-      %p Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
-      %p Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
-      %p Mauris vel lacus vitae felis vestibulum volutpat. Etiam est nunc, venenatis in, tristique eu, imperdiet ac, nisl. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In iaculis facilisis massa. Etiam eu urna.
+      %h2 Kosten Personal Training
+      %h3.all_contant_h3 €70,- per uur
+      %h3.all_contant_h3 €650,- voor een 10-rittenkaart*
+
+      %p
+        *De 10-rittenkaart is inclusief de vervolgafspraak (anamnese en tests) op de intake. Je
+        ontvangt dus €50,- korting én een gratis uur á €70,-
+        Het
+        = link_to "intake gesprek", contact_index_path
+        is uiteraard kosteloos.
+
+      %p
+        %i
+          Prijzen zijn inclusief BTW en exclusief het abonnement op de
+          = link_to "sportschool.", Rails.configuration.hcj_link
+
     .clr
   = render "shared/contact_form"
   .clr

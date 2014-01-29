@@ -2,10 +2,37 @@
   .all_contant_left
     .all_contant_left_in
       %h2 Werkwijze
-      %p Mauris vel lacus vitae felis vestibulum volutpat. Etiam est nunc, venenatis in, tristique eu, imperdiet ac, nisl. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In iaculis facilisis massa. Etiam eu urna. Sed porta. Suspendisse quam leo, molestie sed, luctus quis, feugiat in, pede. Fusce tellus. Sed metus augue, convallis et, vehicula ut Suspendisse quam leo, molestie sed, luctus quis, feugiat in, pede.
-      %p Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
-      %p Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
-      %p Mauris vel lacus vitae felis vestibulum volutpat. Etiam est nunc, venenatis in, tristique eu, imperdiet ac, nisl. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In iaculis facilisis massa. Etiam eu urna.
+
+      %h3.all_contant_h3 Vrijblivende Intake
+      %p
+        Als je geïnteresseerd bent in personal training door mij, graag meer wilt weten, of eerste
+        eens wilt kennismaken, kun je via
+        = link_to "mijn site", contact_index_path
+        contact opnemen. Dit kan ook via
+        = link_to "Health Club Jordaan.", Rails.configuration.hcj_link
+        We plannen dan een vrijblijvend intake gesprek in.
+        Tijdens deze intake vertel je mij jouw verhaal en bespreken we je wensen. Aan de hand
+        hiervan formuleren we je doelen.
+        Deze intake bestaat ook al uit een eerste training, om te kijken of we samen prettig kunnen
+
+      %h3.all_contant_h3 Anamnese & tests
+      %p
+        Hierna plannen we een verdiepende vervolgafspraak in. Deze afspraak staat in het teken
+        van de anamnese (vragenlijst naar het medisch verleden) en een aantal testen: vetmeting,
+        conditie en een flexibilty en lichamelijke test.
+
+      %h3.all_contant_h3 Custom made
+      %p
+        Met deze resultaten ga ik aan de slag. Ik werk een custom made programma voor je uit. Jij
+        bepaalt uiteraard zelf het aantal trainingen per periode met mij.
+        Time to start! We gaan aan de slag met je doelen en gaan er samen tegenaan.
+
+      %h3.all_contant_h3 Meten = weten
+      %p
+        Na een aantal trainingen is het tijd voor een nieuwe meting. Ik kijk naar je progressie en ik
+        stuur eventueel bij door de trainingen waar nodig aan te passen. Zo blijf je gemotiveerd en
+        geprikkeld, zodat we het beste resultaat behalen.
+
     .clr
   = render "shared/contact_form"  
   .clr
